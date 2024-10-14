@@ -51,7 +51,7 @@ const isExcelFile = (file) => {
 
 const fileHeadersAndLengthCheck = (workSheetData) => {
     const maxFileRows = 1000;
-    const requestedHeaders = ["ean", "sku", "name", "designation"];
+    const requestedHeaders = ["ean", "sku", "name"];
     
     if (workSheetData.length > maxFileRows) {
         return false;
